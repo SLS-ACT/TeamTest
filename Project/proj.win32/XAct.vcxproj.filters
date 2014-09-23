@@ -1,0 +1,806 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XAct">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XAct\XHelper">
+      <UniqueIdentifier>{8fad95b5-a82b-4aca-bd4b-e3804aadd206}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XAct\Cocos2dx">
+      <UniqueIdentifier>{c2fa1151-eb93-4397-9e7c-a724056038fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XAct\XBaseObj">
+      <UniqueIdentifier>{8418aa49-92f9-43df-9673-2665987b5630}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XAct\Cocos2dx\layers_scenes_transitions_nodes">
+      <UniqueIdentifier>{cd51841a-9918-4beb-a711-1c8f33fed256}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XAct\XHelper\XTable">
+      <UniqueIdentifier>{c2e80a22-8f8a-458c-9e49-d2e433f91ad0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XAct\Role">
+      <UniqueIdentifier>{d8795094-5118-40d2-9c56-8dd8954489cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XAct\XMap">
+      <UniqueIdentifier>{23cf6d9a-068e-4cb7-a00f-0543b791af69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XAct\Cocos2dx\misc_nodes">
+      <UniqueIdentifier>{5ee34cda-f800-4010-8778-97c3bffd3c62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XAct\XCamera">
+      <UniqueIdentifier>{df975cc7-3eef-499a-be16-22246c8395a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XAct\Cocos2dx\sprite_nodes">
+      <UniqueIdentifier>{fba37de2-e0ec-4fc8-9dac-c7e7b5d88883}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XAct\Cocos2dx\XShader">
+      <UniqueIdentifier>{6a3b4edf-1470-449a-a15b-b1d9d732ead1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XAct\XUI">
+      <UniqueIdentifier>{7e27191b-c963-442d-a340-90cb57bd4f2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XAct\XUI\XFont">
+      <UniqueIdentifier>{12083660-bff7-4f92-b0a6-30ddb75bd506}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XAct\Game">
+      <UniqueIdentifier>{32e8ea42-e25d-4d22-9b5d-ea8f8f225e5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XAct\XEvent">
+      <UniqueIdentifier>{a2d2d115-78d1-4452-b8a3-893797101d1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XAct\XUI\Control">
+      <UniqueIdentifier>{a5bfe55c-6e25-40c5-ab8b-d88653395579}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XAct\XNet">
+      <UniqueIdentifier>{6c69e8a0-2f46-48a6-acb5-c3fd12e3f0c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XAct\Cocos2dx\textures">
+      <UniqueIdentifier>{2c6aed8d-44f9-4964-a222-775d3f3aa714}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XAct\Cocos2dx\textures\DDS">
+      <UniqueIdentifier>{4cf84c76-c785-4e45-8e67-18f5a3b1027f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XAct\Role\Animation">
+      <UniqueIdentifier>{134fa47c-6689-4689-bd3e-3303137b2179}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XAct\Cocos2dx\XLoader">
+      <UniqueIdentifier>{0e232cf7-7bdc-4344-9c3a-d0b7ee57d880}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XAct\XControl">
+      <UniqueIdentifier>{79be1f5c-e4f1-4283-9247-89545dd2cee8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XAct\XNumEffect">
+      <UniqueIdentifier>{de45c80f-a8d9-4328-8029-58e1f98cf9e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XAct\Cocos2dx\textures\ETC">
+      <UniqueIdentifier>{1d130106-6559-4655-a9e8-4fced901cb05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XAct\XSound">
+      <UniqueIdentifier>{3c89cf16-b067-439d-9251-2226d2774d7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XAct\SDK">
+      <UniqueIdentifier>{b64d021f-d716-44dc-808a-0d7c7d7b3a83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XAct\Update">
+      <UniqueIdentifier>{a2e0501f-9b19-4251-a72e-c83516385fd6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\AppDelegate.cpp">
+      <Filter>XAct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\HelloWorldScene.cpp">
+      <Filter>XAct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\XDirector.cpp">
+      <Filter>XAct\Cocos2dx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\layers_scenes_transitions_nodes\XScene.cpp">
+      <Filter>XAct\Cocos2dx\layers_scenes_transitions_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\sprite_nodes\XSprite.cpp">
+      <Filter>XAct\Cocos2dx\sprite_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\layers_scenes_transitions_nodes\XLayer.cpp">
+      <Filter>XAct\Cocos2dx\layers_scenes_transitions_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XHelper\XTable\XTable.cpp">
+      <Filter>XAct\XHelper\XTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\sprite_nodes\XSpriteBatchNode.cpp">
+      <Filter>XAct\Cocos2dx\sprite_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XMap\XMap.cpp">
+      <Filter>XAct\XMap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XHelper\XStrConvert.cpp">
+      <Filter>XAct\XHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\XShader\XShader.cpp">
+      <Filter>XAct\Cocos2dx\XShader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\misc_nodes\XRenderTexture.cpp">
+      <Filter>XAct\Cocos2dx\misc_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XMap\XMapCollide.cpp">
+      <Filter>XAct\XMap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XCamera\XCamera.cpp">
+      <Filter>XAct\XCamera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XHelper\XTable\XTableFile.cpp">
+      <Filter>XAct\XHelper\XTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\XFont\XFont.cpp">
+      <Filter>XAct\XUI\XFont</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Game\XGameState.cpp">
+      <Filter>XAct\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XButton.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XPanel.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\XBaseWindow.cpp">
+      <Filter>XAct\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\XUIManger.cpp">
+      <Filter>XAct\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\XWindowType.cpp">
+      <Filter>XAct\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XEvent\XEvent.cpp">
+      <Filter>XAct\XEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XEvent\XEventManger.cpp">
+      <Filter>XAct\XEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XNet\XProtocol.cpp">
+      <Filter>XAct\XNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Game\GameScript.cpp">
+      <Filter>XAct\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\XUIMangerScript.cpp">
+      <Filter>XAct\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XButtonScript.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XPanelScript.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\XBaseWindowScript.cpp">
+      <Filter>XAct\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\sprite_nodes\XScale9Sprite.cpp">
+      <Filter>XAct\Cocos2dx\sprite_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XNet\XSocket.cpp">
+      <Filter>XAct\XNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XNet\XNetWork.cpp">
+      <Filter>XAct\XNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Role\Animation\XAnimation.cpp">
+      <Filter>XAct\Role\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Role\XRole.cpp">
+      <Filter>XAct\Role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XInputText.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XInputTextScript.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Role\XEffect.cpp">
+      <Filter>XAct\Role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XControl\XJSCtrl.cpp">
+      <Filter>XAct\XControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XControl\XJSGesture.cpp">
+      <Filter>XAct\XControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XControl\XJoystick.cpp">
+      <Filter>XAct\XControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XNumEffect\XNumEffect.cpp">
+      <Filter>XAct\XNumEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XNumEffect\XComboEffect.cpp">
+      <Filter>XAct\XNumEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Role\XRoleAI.cpp">
+      <Filter>XAct\Role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\textures\DDS\S3TC.cpp">
+      <Filter>XAct\Cocos2dx\textures\DDS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\textures\XTexture2D.cpp">
+      <Filter>XAct\Cocos2dx\textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\textures\XTextureCache.cpp">
+      <Filter>XAct\Cocos2dx\textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\textures\ETC\checkheader.c">
+      <Filter>XAct\Cocos2dx\textures\ETC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\textures\ETC\errstr.c">
+      <Filter>XAct\Cocos2dx\textures\ETC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\textures\ETC\hashtable.c">
+      <Filter>XAct\Cocos2dx\textures\ETC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\textures\ETC\loader.c">
+      <Filter>XAct\Cocos2dx\textures\ETC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\textures\ETC\swap.c">
+      <Filter>XAct\Cocos2dx\textures\ETC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\textures\ETC\writer.c">
+      <Filter>XAct\Cocos2dx\textures\ETC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\XLoader\XLoader.cpp">
+      <Filter>XAct\Cocos2dx\XLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\XLoader\XLoader_PNG.cpp">
+      <Filter>XAct\Cocos2dx\XLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\XLoader\XLoader_Tex.cpp">
+      <Filter>XAct\Cocos2dx\XLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XConfig.cpp">
+      <Filter>XAct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XMap\XIZMap.cpp">
+      <Filter>XAct\XMap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\textures\ETC\etcdec.cpp">
+      <Filter>XAct\Cocos2dx\textures\ETC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\textures\ETC\etcunpack.cpp">
+      <Filter>XAct\Cocos2dx\textures\ETC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XList.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XRadioButtonGroup.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XRadioButton.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XItemWindow.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XScrollBar.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XProssBar.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XDataGrid.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XDataGridScript.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XItemWindowScript.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XListScript.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XProssBarScript.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XRadioButtonGroupScript.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XRadioButtonScript.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XScrollBarScript.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XLabel.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XLabelScript.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Role\XRoleManager.cpp">
+      <Filter>XAct\Role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Game\XCityStateScript.cpp">
+      <Filter>XAct\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Game\XInstZoneStateScript.cpp">
+      <Filter>XAct\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XMap\XMapScript.cpp">
+      <Filter>XAct\XMap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Role\XRoleScript.cpp">
+      <Filter>XAct\Role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XMap\XIZMapScript.cpp">
+      <Filter>XAct\XMap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Game\XGameStateBaseScript.cpp">
+      <Filter>XAct\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Game\XGameStateMangerScript.cpp">
+      <Filter>XAct\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XComplexLabel.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XLinker.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XLinkerScript.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XUIRole.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XUIRoleScript.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XWheelWindow.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XWheelWindowScript.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XSound\XSoundManager.cpp">
+      <Filter>XAct\XSound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Game\XTimeManager.cpp">
+      <Filter>XAct\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XTimerLabel.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XNoticeLabel.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XTimerLabelScript.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XHeadEffect.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XImageNum.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XImageNumScript.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XHeadEffectScript.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XNoticeLabelScript.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XSound\XSoundManagerScript.cpp">
+      <Filter>XAct\XSound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XMagicWindow.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XFuncPanel.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XFuncPanelScript.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XMap\XCreateRoleMap.cpp">
+      <Filter>XAct\XMap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Game\XSelRoleStateScript.cpp">
+      <Filter>XAct\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XMagicWindowScript.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XSlider.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XSliderScript.cpp">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\SDK\XSdkManager.cpp">
+      <Filter>XAct\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\sprite_nodes\XSpriteFrameCache.cpp">
+      <Filter>XAct\Cocos2dx\sprite_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\XFileUtils.cpp">
+      <Filter>XAct\Cocos2dx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\UpdateScene.cpp">
+      <Filter>XAct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Game\MaskWordScript.cpp">
+      <Filter>XAct\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\XAct\Game\MaskWord.cpp">
+      <Filter>XAct\Game</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\AppDelegate.h">
+      <Filter>XAct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\HelloWorldScene.h">
+      <Filter>XAct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XHelper\XSingleton.h">
+      <Filter>XAct\XHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\Common.h">
+      <Filter>XAct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\XDirector.h">
+      <Filter>XAct\Cocos2dx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XBaseObj\XLogicObj.h">
+      <Filter>XAct\XBaseObj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\layers_scenes_transitions_nodes\XScene.h">
+      <Filter>XAct\Cocos2dx\layers_scenes_transitions_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XHelper\XMemPool.h">
+      <Filter>XAct\XHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XHelper\XHelper.h">
+      <Filter>XAct\XHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\sprite_nodes\XSprite.h">
+      <Filter>XAct\Cocos2dx\sprite_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\layers_scenes_transitions_nodes\XLayer.h">
+      <Filter>XAct\Cocos2dx\layers_scenes_transitions_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XHelper\XSystem.h">
+      <Filter>XAct\XHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XHelper\XThread.h">
+      <Filter>XAct\XHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XHelper\XThreadLock.h">
+      <Filter>XAct\XHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XHelper\XTable\XTable.h">
+      <Filter>XAct\XHelper\XTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XHelper\XTable\XTableHeader.h">
+      <Filter>XAct\XHelper\XTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XHelper\XLink.h">
+      <Filter>XAct\XHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XBaseObj\XRenderObj.h">
+      <Filter>XAct\XBaseObj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\sprite_nodes\XSpriteBatchNode.h">
+      <Filter>XAct\Cocos2dx\sprite_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XHelper\XAutoDelPtr.h">
+      <Filter>XAct\XHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XHelper\XHash.h">
+      <Filter>XAct\XHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XHelper\XFuncDefine.h">
+      <Filter>XAct\XHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XHelper\XEfficiency.h">
+      <Filter>XAct\XHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XHelper\XHttpPost.h">
+      <Filter>XAct\XHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XBaseObj\XMoveObj.h">
+      <Filter>XAct\XBaseObj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\Role\XRole.h">
+      <Filter>XAct\Role</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XMap\XMap.h">
+      <Filter>XAct\XMap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XHelper\XAutoClrLua.h">
+      <Filter>XAct\XHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XHelper\XStrConvert.h">
+      <Filter>XAct\XHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\XShader\XShader.h">
+      <Filter>XAct\Cocos2dx\XShader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XHelper\XMemRelease.h">
+      <Filter>XAct\XHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\misc_nodes\XRenderTexture.h">
+      <Filter>XAct\Cocos2dx\misc_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XBaseObj\XCollision.h">
+      <Filter>XAct\XBaseObj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XMap\XMapObj.h">
+      <Filter>XAct\XMap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XCamera\XCamera.h">
+      <Filter>XAct\XCamera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XHelper\XSinglyLink.h">
+      <Filter>XAct\XHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\CommonFile.h">
+      <Filter>XAct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XHelper\XTable\XTableFile.h">
+      <Filter>XAct\XHelper\XTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XUI\XFont\XFont.h">
+      <Filter>XAct\XUI\XFont</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\Game\XGameState.h">
+      <Filter>XAct\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XButton.h">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XPanel.h">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XUI\XBaseWindow.h">
+      <Filter>XAct\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XUI\XUIManger.h">
+      <Filter>XAct\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XUI\XWindowType.h">
+      <Filter>XAct\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XEvent\XEvent.h">
+      <Filter>XAct\XEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XEvent\XEventManger.h">
+      <Filter>XAct\XEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XNet\XProtocol.h">
+      <Filter>XAct\XNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\Game\GameScript.h">
+      <Filter>XAct\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\sprite_nodes\XScale9Sprite.h">
+      <Filter>XAct\Cocos2dx\sprite_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XNet\XSocket.h">
+      <Filter>XAct\XNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XNet\XNetWork.h">
+      <Filter>XAct\XNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\Role\Animation\XAnimation.h">
+      <Filter>XAct\Role\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\CommonEvent.h">
+      <Filter>XAct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XInputText.h">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\Role\XEffect.h">
+      <Filter>XAct\Role</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XControl\XJSCtrl.h">
+      <Filter>XAct\XControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XControl\XJSGesture.h">
+      <Filter>XAct\XControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XControl\XJoystick.h">
+      <Filter>XAct\XControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XNumEffect\XNumEffect.h">
+      <Filter>XAct\XNumEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XNumEffect\XComboEffect.h">
+      <Filter>XAct\XNumEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XMap\XIZMap.h">
+      <Filter>XAct\XMap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XMap\XAIObj.h">
+      <Filter>XAct\XMap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\textures\DDS\S3TC.h">
+      <Filter>XAct\Cocos2dx\textures\DDS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\textures\XTexture2D.h">
+      <Filter>XAct\Cocos2dx\textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\textures\XTextureCache.h">
+      <Filter>XAct\Cocos2dx\textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\textures\ETC\ETC.h">
+      <Filter>XAct\Cocos2dx\textures\ETC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\textures\ETC\gl_funcptrs.h">
+      <Filter>XAct\Cocos2dx\textures\ETC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\textures\ETC\gles1_funcptrs.h">
+      <Filter>XAct\Cocos2dx\textures\ETC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\textures\ETC\gles2_funcptrs.h">
+      <Filter>XAct\Cocos2dx\textures\ETC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\textures\ETC\gles3_funcptrs.h">
+      <Filter>XAct\Cocos2dx\textures\ETC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\textures\ETC\ktxint.h">
+      <Filter>XAct\Cocos2dx\textures\ETC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\textures\ETC\uthash.h">
+      <Filter>XAct\Cocos2dx\textures\ETC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\XLoader\XLoader.h">
+      <Filter>XAct\Cocos2dx\XLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XConfig.h">
+      <Filter>XAct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XList.h">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XRadioButtonGroup.h">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XRadioButton.h">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XItemWindow.h">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XScrollBar.h">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XHelper\XStrBuffer.h">
+      <Filter>XAct\XHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XProssBar.h">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XDataGrid.h">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XLabel.h">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\Role\XRoleManager.h">
+      <Filter>XAct\Role</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XComplexLabel.h">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XLinker.h">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XUIRole.h">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XHelper\XShm_Android.h">
+      <Filter>XAct\XHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XWheelWindow.h">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\XWeather.h">
+      <Filter>XAct\Cocos2dx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XSound\XSoundManager.h">
+      <Filter>XAct\XSound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\Game\XTimeManager.h">
+      <Filter>XAct\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XTimerLabel.h">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XNoticeLabel.h">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XHeadEffect.h">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XImageNum.h">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XMagicWindow.h">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XFuncPanel.h">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XMap\XCreateRoleMap.h">
+      <Filter>XAct\XMap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XSlider.h">
+      <Filter>XAct\XUI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\SDK\XSdkManager.h">
+      <Filter>XAct\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\sprite_nodes\XSpriteFrameCache.h">
+      <Filter>XAct\Cocos2dx\sprite_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\Update\XHttpSocket.h">
+      <Filter>XAct\Update</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\Update\XHttpFile.h">
+      <Filter>XAct\Update</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\Update\XPFHeader.h">
+      <Filter>XAct\Update</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\Update\XPackFile.h">
+      <Filter>XAct\Update</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\Update\XFileAPIC.h">
+      <Filter>XAct\Update</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\Update\XPackage.h">
+      <Filter>XAct\Update</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\XFileUtils.h">
+      <Filter>XAct\Cocos2dx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\UpdateScene.h">
+      <Filter>XAct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\Update\XFtp.h">
+      <Filter>XAct\Update</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\XAct\Game\MaskWord.h">
+      <Filter>XAct\Game</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Source\XAct\XBaseObj\XMoveObj.inl">
+      <Filter>XAct\XBaseObj</Filter>
+    </None>
+    <None Include="..\..\Source\XAct\Cocos2dx\XShader\XShader_Gray.inl">
+      <Filter>XAct\Cocos2dx\XShader</Filter>
+    </None>
+    <None Include="..\..\Source\XAct\Cocos2dx\XShader\XGLProgram.inl">
+      <Filter>XAct\Cocos2dx\XShader</Filter>
+    </None>
+    <None Include="..\..\Source\XAct\XBaseObj\XCollision.inl">
+      <Filter>XAct\XBaseObj</Filter>
+    </None>
+    <None Include="..\..\Source\XAct\Cocos2dx\XShader\XShader_ETC1.inl">
+      <Filter>XAct\Cocos2dx\XShader</Filter>
+    </None>
+  </ItemGroup>
+</Project>

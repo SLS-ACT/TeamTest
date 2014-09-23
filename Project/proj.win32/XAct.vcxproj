@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{76A39BB2-9B84-4C65-98A5-654D86B86F2A}</ProjectGuid>
+    <RootNamespace>test_win32</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\Source\cocos2dx;$(ProjectDir)..\..\Source\cocos2dx\include;$(ProjectDir)..\..\Source\cocos2dx\kazmath\include;$(ProjectDir)..\..\Source\cocos2dx\platform\win32;$(ProjectDir)..\..\Source\cocos2dx\platform\third_party\win32;$(ProjectDir)..\..\Source\cocos2dx\platform\third_party\win32\OGLES;$(ProjectDir)..\..\Source\cocos2dx\platform\third_party\win32\pthread;$(ProjectDir)..\..\Source\cocos2dx\platform\third_party\win32\zlib;$(ProjectDir)..\..\Source\CocosDenshion\include;$(ProjectDir)..\..\Source\XAct;$(ProjectDir)..\..\Source\lua\lua;$(ProjectDir)..\..\Source\lua\tolua;$(ProjectDir)..\..\Source\lua\cocos2dx_support;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libcocos2d.lib;libCocosDenshion.lib;opengl32.lib;glew32.lib;pthreadVCE2.lib;liblua.lib;libcurl_imp.lib</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);$(ProjectDir)..\..\Source\cocos2dx\platform\third_party\win32\libraries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <StackReserveSize>10485760</StackReserveSize>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\Source\cocos2dx;$(ProjectDir)..\..\Source\cocos2dx\include;$(ProjectDir)..\..\Source\cocos2dx\kazmath\include;$(ProjectDir)..\..\Source\cocos2dx\platform\win32;$(ProjectDir)..\..\Source\cocos2dx\platform\third_party\win32;$(ProjectDir)..\..\Source\cocos2dx\platform\third_party\win32\OGLES;$(ProjectDir)..\..\Source\cocos2dx\platform\third_party\win32\pthread;$(ProjectDir)..\..\Source\cocos2dx\platform\third_party\win32\zlib;$(ProjectDir)..\..\Source\CocosDenshion\include;$(ProjectDir)..\..\Source\XAct;$(ProjectDir)..\..\Source\lua\lua;$(ProjectDir)..\..\Source\lua\tolua;$(ProjectDir)..\..\Source\lua\cocos2dx_support;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libcocos2d.lib;libCocosDenshion.lib;opengl32.lib;glew32.lib;pthreadVCE2.lib;liblua.lib;libcurl_imp.lib</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);$(ProjectDir)..\..\Source\cocos2dx\platform\third_party\win32\libraries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\XAct\AppDelegate.cpp" />
+    <ClCompile Include="..\..\Source\XAct\Game\MaskWord.cpp" />
+    <ClCompile Include="..\..\Source\XAct\Game\MaskWordScript.cpp" />
+    <ClCompile Include="..\..\Source\XAct\UpdateScene.cpp" />
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\layers_scenes_transitions_nodes\XLayer.cpp" />
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\layers_scenes_transitions_nodes\XScene.cpp" />
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\misc_nodes\XRenderTexture.cpp" />
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\sprite_nodes\XScale9Sprite.cpp" />
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\sprite_nodes\XSprite.cpp" />
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\sprite_nodes\XSpriteBatchNode.cpp" />
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\sprite_nodes\XSpriteFrameCache.cpp" />
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\textures\DDS\S3TC.cpp" />
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\textures\ETC\checkheader.c" />
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\textures\ETC\errstr.c" />
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\textures\ETC\etcdec.cpp" />
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\textures\ETC\etcunpack.cpp" />
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\textures\ETC\hashtable.c" />
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\textures\ETC\loader.c" />
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\textures\ETC\swap.c" />
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\textures\ETC\writer.c" />
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\textures\XTexture2D.cpp" />
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\textures\XTextureCache.cpp" />
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\XDirector.cpp" />
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\XFileUtils.cpp" />
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\XLoader\XLoader.cpp" />
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\XLoader\XLoader_PNG.cpp" />
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\XLoader\XLoader_Tex.cpp" />
+    <ClCompile Include="..\..\Source\XAct\Cocos2dx\XShader\XShader.cpp" />
+    <ClCompile Include="..\..\Source\XAct\Game\GameScript.cpp" />
+    <ClCompile Include="..\..\Source\XAct\Game\XCityStateScript.cpp" />
+    <ClCompile Include="..\..\Source\XAct\Game\XGameState.cpp" />
+    <ClCompile Include="..\..\Source\XAct\Game\XGameStateBaseScript.cpp" />
+    <ClCompile Include="..\..\Source\XAct\Game\XGameStateMangerScript.cpp" />
+    <ClCompile Include="..\..\Source\XAct\Game\XInstZoneStateScript.cpp" />
+    <ClCompile Include="..\..\Source\XAct\Game\XSelRoleStateScript.cpp" />
+    <ClCompile Include="..\..\Source\XAct\Game\XTimeManager.cpp" />
+    <ClCompile Include="..\..\Source\XAct\HelloWorldScene.cpp" />
+    <ClCompile Include="..\..\Source\XAct\Role\Animation\XAnimation.cpp" />
+    <ClCompile Include="..\..\Source\XAct\Role\XEffect.cpp" />
+    <ClCompile Include="..\..\Source\XAct\Role\XRole.cpp" />
+    <ClCompile Include="..\..\Source\XAct\Role\XRoleAI.cpp" />
+    <ClCompile Include="..\..\Source\XAct\Role\XRoleManager.cpp" />
+    <ClCompile Include="..\..\Source\XAct\Role\XRoleScript.cpp" />
+    <ClCompile Include="..\..\Source\XAct\SDK\XSdkManager.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XCamera\XCamera.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XConfig.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XControl\XJoystick.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XControl\XJSCtrl.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XControl\XJSGesture.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XEvent\XEvent.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XEvent\XEventManger.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XHelper\XStrConvert.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XHelper\XTable\XTable.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XHelper\XTable\XTableFile.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XMap\XCreateRoleMap.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XMap\XIZMap.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XMap\XIZMapScript.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XMap\XMap.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XMap\XMapCollide.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XMap\XMapScript.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XNet\XNetWork.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XNumEffect\XComboEffect.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XNumEffect\XNumEffect.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XSound\XSoundManager.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XSound\XSoundManagerScript.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XButton.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XButtonScript.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XComplexLabel.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XDataGrid.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XDataGridScript.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XFuncPanel.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XFuncPanelScript.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XHeadEffect.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XHeadEffectScript.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XImageNum.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XImageNumScript.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XInputText.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XInputTextScript.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XItemWindow.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XItemWindowScript.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XLabel.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XLabelScript.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XLinker.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XLinkerScript.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XList.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XListScript.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XMagicWindow.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XMagicWindowScript.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XNoticeLabel.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XNoticeLabelScript.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XPanel.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XPanelScript.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XProssBar.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XProssBarScript.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XRadioButton.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XRadioButtonGroup.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XRadioButtonGroupScript.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XRadioButtonScript.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XScrollBar.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XScrollBarScript.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XSlider.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XSliderScript.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XTimerLabel.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XTimerLabelScript.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XUIRole.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XUIRoleScript.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XWheelWindow.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\Control\XWheelWindowScript.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\XBaseWindow.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XNet\XProtocol.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\XBaseWindowScript.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XNet\XSocket.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\XFont\XFont.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\XUIManger.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\XUIMangerScript.cpp" />
+    <ClCompile Include="..\..\Source\XAct\XUI\XWindowType.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\XAct\AppDelegate.h" />
+    <ClInclude Include="..\..\Source\XAct\Game\MaskWord.h" />
+    <ClInclude Include="..\..\Source\XAct\UpdateScene.h" />
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\layers_scenes_transitions_nodes\XLayer.h" />
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\layers_scenes_transitions_nodes\XScene.h" />
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\misc_nodes\XRenderTexture.h" />
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\sprite_nodes\XScale9Sprite.h" />
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\sprite_nodes\XSprite.h" />
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\sprite_nodes\XSpriteBatchNode.h" />
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\sprite_nodes\XSpriteFrameCache.h" />
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\textures\DDS\S3TC.h" />
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\textures\ETC\ETC.h" />
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\textures\ETC\gles1_funcptrs.h" />
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\textures\ETC\gles2_funcptrs.h" />
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\textures\ETC\gles3_funcptrs.h" />
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\textures\ETC\gl_funcptrs.h" />
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\textures\ETC\ktxint.h" />
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\textures\ETC\uthash.h" />
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\textures\XTexture2D.h" />
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\textures\XTextureCache.h" />
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\XDirector.h" />
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\XFileUtils.h" />
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\XLoader\XLoader.h" />
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\XShader\XShader.h" />
+    <ClInclude Include="..\..\Source\XAct\Cocos2dx\XWeather.h" />
+    <ClInclude Include="..\..\Source\XAct\Common.h" />
+    <ClInclude Include="..\..\Source\XAct\CommonEvent.h" />
+    <ClInclude Include="..\..\Source\XAct\CommonFile.h" />
+    <ClInclude Include="..\..\Source\XAct\Game\GameScript.h" />
+    <ClInclude Include="..\..\Source\XAct\Game\XGameState.h" />
+    <ClInclude Include="..\..\Source\XAct\Game\XTimeManager.h" />
+    <ClInclude Include="..\..\Source\XAct\HelloWorldScene.h" />
+    <ClInclude Include="..\..\Source\XAct\Role\Animation\XAnimation.h" />
+    <ClInclude Include="..\..\Source\XAct\Role\XEffect.h" />
+    <ClInclude Include="..\..\Source\XAct\Role\XRole.h" />
+    <ClInclude Include="..\..\Source\XAct\Role\XRoleManager.h" />
+    <ClInclude Include="..\..\Source\XAct\SDK\XSdkManager.h" />
+    <ClInclude Include="..\..\Source\XAct\Update\XFileAPIC.h" />
+    <ClInclude Include="..\..\Source\XAct\Update\XFtp.h" />
+    <ClInclude Include="..\..\Source\XAct\Update\XHttpFile.h" />
+    <ClInclude Include="..\..\Source\XAct\Update\XHttpSocket.h" />
+    <ClInclude Include="..\..\Source\XAct\Update\XPackage.h" />
+    <ClInclude Include="..\..\Source\XAct\Update\XPackFile.h" />
+    <ClInclude Include="..\..\Source\XAct\Update\XPFHeader.h" />
+    <ClInclude Include="..\..\Source\XAct\XBaseObj\XCollision.h" />
+    <ClInclude Include="..\..\Source\XAct\XBaseObj\XLogicObj.h" />
+    <ClInclude Include="..\..\Source\XAct\XBaseObj\XMoveObj.h" />
+    <ClInclude Include="..\..\Source\XAct\XBaseObj\XRenderObj.h" />
+    <ClInclude Include="..\..\Source\XAct\XCamera\XCamera.h" />
+    <ClInclude Include="..\..\Source\XAct\XConfig.h" />
+    <ClInclude Include="..\..\Source\XAct\XControl\XJoystick.h" />
+    <ClInclude Include="..\..\Source\XAct\XControl\XJSCtrl.h" />
+    <ClInclude Include="..\..\Source\XAct\XControl\XJSGesture.h" />
+    <ClInclude Include="..\..\Source\XAct\XEvent\XEvent.h" />
+    <ClInclude Include="..\..\Source\XAct\XEvent\XEventManger.h" />
+    <ClInclude Include="..\..\Source\XAct\XHelper\XAutoClrLua.h" />
+    <ClInclude Include="..\..\Source\XAct\XHelper\XAutoDelPtr.h" />
+    <ClInclude Include="..\..\Source\XAct\XHelper\XEfficiency.h" />
+    <ClInclude Include="..\..\Source\XAct\XHelper\XFuncDefine.h" />
+    <ClInclude Include="..\..\Source\XAct\XHelper\XHash.h" />
+    <ClInclude Include="..\..\Source\XAct\XHelper\XHelper.h" />
+    <ClInclude Include="..\..\Source\XAct\XHelper\XHttpPost.h" />
+    <ClInclude Include="..\..\Source\XAct\XHelper\XLink.h" />
+    <ClInclude Include="..\..\Source\XAct\XHelper\XMemPool.h" />
+    <ClInclude Include="..\..\Source\XAct\XHelper\XMemRelease.h" />
+    <ClInclude Include="..\..\Source\XAct\XHelper\XShm_Android.h" />
+    <ClInclude Include="..\..\Source\XAct\XHelper\XSingleton.h" />
+    <ClInclude Include="..\..\Source\XAct\XHelper\XSinglyLink.h" />
+    <ClInclude Include="..\..\Source\XAct\XHelper\XStrBuffer.h" />
+    <ClInclude Include="..\..\Source\XAct\XHelper\XStrConvert.h" />
+    <ClInclude Include="..\..\Source\XAct\XHelper\XSystem.h" />
+    <ClInclude Include="..\..\Source\XAct\XHelper\XTable\XTable.h" />
+    <ClInclude Include="..\..\Source\XAct\XHelper\XTable\XTableFile.h" />
+    <ClInclude Include="..\..\Source\XAct\XHelper\XTable\XTableHeader.h" />
+    <ClInclude Include="..\..\Source\XAct\XHelper\XThread.h" />
+    <ClInclude Include="..\..\Source\XAct\XHelper\XThreadLock.h" />
+    <ClInclude Include="..\..\Source\XAct\XMap\XCreateRoleMap.h" />
+    <ClInclude Include="..\..\Source\XAct\XMap\XIZMap.h" />
+    <ClInclude Include="..\..\Source\XAct\XMap\XAIObj.h" />
+    <ClInclude Include="..\..\Source\XAct\XMap\XMap.h" />
+    <ClInclude Include="..\..\Source\XAct\XMap\XMapObj.h" />
+    <ClInclude Include="..\..\Source\XAct\XNet\XNetWork.h" />
+    <ClInclude Include="..\..\Source\XAct\XNumEffect\XComboEffect.h" />
+    <ClInclude Include="..\..\Source\XAct\XNumEffect\XNumEffect.h" />
+    <ClInclude Include="..\..\Source\XAct\XSound\XSoundManager.h" />
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XButton.h" />
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XComplexLabel.h" />
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XDataGrid.h" />
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XFuncPanel.h" />
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XHeadEffect.h" />
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XImageNum.h" />
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XInputText.h" />
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XItemWindow.h" />
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XLabel.h" />
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XLinker.h" />
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XList.h" />
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XMagicWindow.h" />
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XNoticeLabel.h" />
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XPanel.h" />
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XProssBar.h" />
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XRadioButton.h" />
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XRadioButtonGroup.h" />
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XScrollBar.h" />
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XSlider.h" />
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XTimerLabel.h" />
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XUIRole.h" />
+    <ClInclude Include="..\..\Source\XAct\XUI\Control\XWheelWindow.h" />
+    <ClInclude Include="..\..\Source\XAct\XUI\XBaseWindow.h" />
+    <ClInclude Include="..\..\Source\XAct\XNet\XProtocol.h" />
+    <ClInclude Include="..\..\Source\XAct\XNet\XSocket.h" />
+    <ClInclude Include="..\..\Source\XAct\XUI\XFont\XFont.h" />
+    <ClInclude Include="..\..\Source\XAct\XUI\XUIManger.h" />
+    <ClInclude Include="..\..\Source\XAct\XUI\XWindowType.h" />
+    <ClInclude Include="main.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\cocos2dx\proj.win32\cocos2d.vcxproj">
+      <Project>{98a51ba8-fc3a-415b-ac8f-8c7bd464e93e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\CocosDenshion\proj.win32\CocosDenshion.vcxproj">
+      <Project>{f8edd7fa-9a51-4e80-baeb-860825d2eac6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\extensions\proj.win32\libExtensions.vcxproj">
+      <Project>{21b2c324-891f-48ea-ad1a-5ae13de12e28}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\external\Box2D\proj.win32\Box2D.vcxproj">
+      <Project>{929480e7-23c0-4df6-8456-096d71547116}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\external\chipmunk\proj.win32\chipmunk.vcxproj">
+      <Project>{207bc7a9-ccf1-4f2f-a04d-45f72242ae25}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Source\XAct\Cocos2dx\XShader\XGLProgram.inl" />
+    <None Include="..\..\Source\XAct\Cocos2dx\XShader\XShader_ETC1.inl" />
+    <None Include="..\..\Source\XAct\Cocos2dx\XShader\XShader_Gray.inl" />
+    <None Include="..\..\Source\XAct\XBaseObj\XCollision.inl" />
+    <None Include="..\..\Source\XAct\XBaseObj\XMoveObj.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
