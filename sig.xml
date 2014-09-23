@@ -1,0 +1,76 @@
+	<ui type="XFuncPanel" name="Sign_In" parent="" x="0" y="0" w="800" h="600" bg="">
+		<XBaseWindow name="mainBG" parent="Sign_In" x="0" y="22" w="744" h="578" bg="1_1.png" rect="x=70,y=60,w=15,h=15" />
+		<XBaseWindow name="titlebg" parent="Sign_In" x="195" y="0" w="337" h="64" bg="111_14.png" />
+		<XButton name="close" parent="Sign_In" x="743" y="52" w="55" h="97" up="2_3_1.png" down="2_3_2.png" />	
+		<XLabel name="maintitle" parent="Sign_In" x="302" y="17" w="127" h="28" ha="1" va="1" multi= '0' size = "24" text="签到得大奖" color="16762786" />
+		<XBaseWindow name="bg" parent="Sign_In" x="12" y="63" w="720" h="512" bg="1_2.png" rect="x=42,y=35,w=2,h=10" />
+		<XBaseWindow name="lightbg" parent="Sign_In" x="24" y="322" w="110" h="128"  bg="0530_13.png" rect="x=20,y=20,w=6,h=4"/>
+		<XLabel name="title1" parent="Sign_In" x="108" y="87" w="540" h="28" ha="1" va="1" multi= '0' size = "24" text="累计签到得大奖，奖励每周结算，自动发奖" color="16776960" />
+		<XBaseWindow name="prossbg" parent="Sign_In" x="44" y="204" w="655" h="20"  bg="7_3.png" rect="x=10,y=10,w=7,h=3"/>
+		<XProssBar name="pross" parent="Sign_In"  x="44" y="204" w="655" h="20" bg = "" style = "0" bar = "6_6_new.png" dynamic = "2" />
+		
+		<XBaseWindow name="item3" parent="Sign_In" x="346" y="181" w="64" h="64"  />
+		<XBaseWindow name="Airbubbles1" parent="Sign_In" x="373" y="149" w="60" h="40" />
+		<XLabel name="title1" parent="Sign_In" x="356" y="245" w="32" h="24" ha="1" va="1" multi= '0' size = "20" text="3天" color="65280" />
+		<XBaseWindow name="item5" parent="Sign_In" x="470" y="181" w="64" h="64"  />
+		<XBaseWindow name="Airbubbles2" parent="Sign_In" x="513" y="149" w="60" h="40" />
+		<XLabel name="title1" parent="Sign_In" x="476" y="245" w="32" h="24" ha="1" va="1" multi= '0' size = "20" text="5天" color="65280" />
+		<XBaseWindow name="item7" parent="Sign_In" x="597" y="181" w="64" h="64"  />
+		<XBaseWindow name="Airbubbles3" parent="Sign_In" x="643" y="149" w="60" h="40" />
+		<XLabel name="title1" parent="Sign_In" x="614" y="245" w="32" h="24" ha="1" va="1" multi= '0' size = "20" text="7天" color="65280" />
+		
+		<XBaseWindow name="labbg0" parent="Sign_In" x="35" y="294" w="94" h="42" bg=""/>
+		<XLabel name="week0" parent="Sign_In" x="37" y="302" w="89" h="24" ha="1" va="1" multi= '0' size = "18" text="星期日" color="6710886" />
+		<XItemWindow name ="awardicon0" parent="Sign_In" x="35" y="336" w="95" h="95" bg="3_1_1.png" Item="" rect="x=20,y=20,w=15,h=15" AutoScale = "1" />
+		<XBaseWindow name="signbg0" parent="Sign_In" x="41" y="437" w="72" h="52"  bg="0515_4.png" />
+		<XBaseWindow name="sign0" parent="Sign_In" x="60" y="445" w="36" h="26"  bg="7_6.png" />
+		<XButton name="resign0" parent="Sign_In" x="37" y="434" w="89" h="24" up="0530_8_1.png" down="0530_8_2.png" size = "18" text="补签" Auto = "1"/>
+	
+		<XBaseWindow name="labbg1" parent="Sign_In" x="129" y="294" w="94" h="42" bg=""/>
+		<XLabel name="week1" parent="Sign_In" x="131" y="302" w="55" h="22" ha="1" va="1" multi= '0' size = "18" text="星期一" color="16777215" />
+		<XItemWindow name ="awardicon1" parent="Sign_In" x="129" y="336" w="91" h="84" bg="3_1_1.png" Item="" rect="x=20,y=20,w=15,h=15" />
+		<XBaseWindow name="signbg1" parent="Sign_In" x="139" y="437" w="72" h="52"  bg="0515_4.png" />
+		<XBaseWindow name="sign1" parent="Sign_In" x="158" y="445" w="36" h="26"  bg="7_6.png" />
+		<XButton name="resign1" parent="Sign_In" x="132" y="434" w="89" h="24" up="0530_8_1.png" down="0530_8_2.png" size = "18" text="补签" Auto = "1"/>
+	
+		<XBaseWindow name="labbg2" parent="Sign_In" x="225" y="294" w="94" h="42" bg=""/>
+		<XLabel name="week2" parent="Sign_In" x="227" y="302" w="55" h="22" ha="1" va="1" multi= '0' size = "18" text="星期二" color="16777215" />
+		<XItemWindow name ="awardicon2" parent="Sign_In" x="224" y="336" w="91" h="84" bg="3_1_1.png" Item="" rect="x=20,y=20,w=15,h=15" />
+		<XBaseWindow name="signbg2" parent="Sign_In" x="237" y="437" w="72" h="52"  bg="0515_4.png" />
+		<XBaseWindow name="sign2" parent="Sign_In" x="256" y="445" w="36" h="26"  bg="7_6.png" />
+		<XButton name="resign2" parent="Sign_In" x="230" y="434" w="89" h="24" up="0530_8_1.png" down="0530_8_2.png" size = "18" text="补签" Auto = "1"/>
+		
+		<XBaseWindow name="labbg3" parent="Sign_In" x="319" y="294" w="94" h="42" bg=""/>
+		<XLabel name="week3" parent="Sign_In" x="321" y="302" w="55" h="22" ha="1" va="1" multi= '0' size = "18" text="星期三" color="16777215" />
+		<XItemWindow name ="awardicon3" parent="Sign_In" x="319" y="336" w="91" h="84" bg="3_1_1.png" Item="" rect="x=20,y=20,w=15,h=15" />
+		<XBaseWindow name="signbg3" parent="Sign_In" x="335" y="437" w="72" h="52"  bg="0515_4.png" />
+		<XBaseWindow name="sign3" parent="Sign_In" x="354" y="445" w="36" h="26"  bg="7_6.png" />
+		<XButton name="resign3" parent="Sign_In" x="328" y="434" w="89" h="24" up="0530_8_1.png" down="0530_8_2.png" size = "18" text="补签" Auto = "1"/>
+		
+		<XBaseWindow name="labbg4" parent="Sign_In" x="424" y="294" w="94" h="42" bg=""/>
+		<XLabel name="week4" parent="Sign_In" x="416" y="302" w="55" h="22" ha="1" va="1" multi= '0' size = "18" text="星期四" color="16777215" />
+		<XItemWindow name ="awardicon4" parent="Sign_In" x="414" y="336" w="91" h="84" bg="3_1_1.png" Item="" rect="x=20,y=20,w=15,h=15" />
+		<XBaseWindow name="signbg4" parent="Sign_In" x="433" y="437" w="72" h="52"  bg="0515_4.png" />
+		<XBaseWindow name="sign4" parent="Sign_In" x="452" y="445" w="36" h="26"  bg="7_6.png" />
+		<XButton name="resign4" parent="Sign_In" x="426" y="434" w="89" h="24" up="0530_8_1.png" down="0530_8_2.png" size = "18" text="补签" Auto = "1"/>
+		
+		<XBaseWindow name="labbg5" parent="Sign_In" x="508" y="294" w="94" h="42" bg=""/>
+		<XLabel name="week5" parent="Sign_In" x="510" y="302" w="55" h="22" ha="1" va="1" multi= '0' size = "18" text="星期五" color="16777215" />
+		<XItemWindow name ="awardicon5" parent="Sign_In" x="508" y="336" w="91" h="84" bg="3_1_1.png" Item="" rect="x=20,y=20,w=15,h=15" />
+		<XBaseWindow name="signbg5" parent="Sign_In" x="531" y="437" w="72" h="52"  bg="0515_4.png" />
+		<XBaseWindow name="sign5" parent="Sign_In" x="550" y="445" w="36" h="26"  bg="7_6.png" />
+		<XButton name="resign5" parent="Sign_In" x="524" y="434" w="89" h="24" up="0530_8_1.png" down="0530_8_2.png" size = "18" text="补签" Auto = "1"/>
+		
+		<XBaseWindow name="labbg5" parent="Sign_In" x="604" y="294" w="94" h="42" bg=""/>
+		<XLabel name="week6" parent="Sign_In" x="606" y="302" w="55" h="22" ha="1" va="1" multi= '0' size = "18" text="星期六" color="16777215" />
+		<XItemWindow name ="awardicon6" parent="Sign_In" x="604" y="336" w="91" h="84" bg="3_1_1.png" Item="" rect="x=20,y=20,w=15,h=15" />
+		<XBaseWindow name="signbg6" parent="Sign_In" x="629" y="437" w="72" h="52"  bg="0515_4.png" />
+		<XBaseWindow name="sign6" parent="Sign_In" x="648" y="445" w="36" h="26"  bg="7_6.png" />
+		<XButton name="resign6" parent="Sign_In" x="622" y="434" w="89" h="24" up="0530_8_1.png" down="0530_8_2.png" size = "18" text="补签" Auto = "1"/>
+
+		<XBaseWindow name="fenge1" parent="Sign_In" x="27" y="277" w="667" h="6"  bg="7_5.png" rect="x=55,y=2,w=12,h=2" />
+		<XBaseWindow name="fenge2" parent="Sign_In" x="37" y="475" w="667" h="6"  bg="7_5.png" rect="x=55,y=2,w=12,h=2" />
+		<XLabel name ="tip" parent="Sign_In" x="27" y="508" w="540" h="28" ha="1" va="1" multi= '0' size = "24" text="补签可获得当天奖励，并可增加累计签到次数" color="16776960" />
+		<XButton name="sign" parent="Sign_In" x="556" y="494" w="180" h="62" up="2_1_1.png" down="2_1_2.png" size = "20" text="签到领奖" Auto = "1"/>
+		
+	</ui>
