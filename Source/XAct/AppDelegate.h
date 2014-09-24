@@ -21,6 +21,9 @@ public:
     */
     virtual bool applicationDidFinishLaunching();
 
+
+	//ssssssssssssssssssssss
+
     /**
     @brief  The function be called when the application enter background
     @param  the pointer of the application
