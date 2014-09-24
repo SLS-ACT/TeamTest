@@ -23,6 +23,8 @@ public:
 
 
 	//ssssssssssssssssssssss
+	//ssssssssssssssss
+	//ssssssssssss
 
     /**
     @brief  The function be called when the application enter background
